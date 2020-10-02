@@ -1,0 +1,615 @@
+ASSIGNMENT NO. 2 
+
+NAME: Amit Raosaheb Walunj
+
+
+Question 1.
+
+
+
+
+
+PROGRAM:
+ 
+package edac;
+
+public class Question1
+{
+    public static void main(String args[])
+    {
+    for(int i=1;i<=9;i++)
+    {
+        for(int j=9;j>=i;j--)
+        {
+            System.out.print(" ");
+        }
+        for(int k=1;k<=i;k++)
+                {
+                    System.out.print(i+" ");
+                }   
+        System.out.println();
+    }
+  }    
+    
+    
+}
+
+OUTPUT:
+         1 
+        2 2 
+       3 3 3 
+      4 4 4 4 
+     5 5 5 5 5 
+    6 6 6 6 6 6 
+   7 7 7 7 7 7 7 
+  8 8 8 8 8 8 8 8 
+ 9 9 9 9 9 9 9 9 9 
+ 
+ 
+ 
+ 
+ 
+ Question 2.
+ 
+ 
+ 
+ 
+ PROGRAM:
+ 
+ package edac;
+
+public class Question2 {
+    public static void main(String args[]){
+        for(int i=1;i<=9;i++)
+        {
+            for(int j=9;j>=i;j--)
+            {
+                System.out.print(" ");
+            }
+            for(int k=1;k<=i;k++)
+            {
+                System.out.print(k+" ");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+OUTPUT:
+         1 
+        1 2 
+       1 2 3 
+      1 2 3 4 
+     1 2 3 4 5 
+    1 2 3 4 5 6 
+   1 2 3 4 5 6 7 
+  1 2 3 4 5 6 7 8 
+ 1 2 3 4 5 6 7 8 9 
+ 
+ 
+ 
+ 
+ 
+ 
+ Ouestion 3.
+ 
+ 
+ 
+ PROGRAM:
+ 
+ package edac;
+
+public class Question3{
+    public static void main(String args[])
+    {
+        for(int i=1;i<=9;i++)
+        {
+            for(int j=9;j>=i;j--)
+            {
+                System.out.print(" ");
+            }
+            for(int k=1;k<=i;k++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+ 
+ OUTPUT:
+ 
+         * 
+        * * 
+       * * * 
+      * * * * 
+     * * * * * 
+    * * * * * * 
+   * * * * * * * 
+  * * * * * * * * 
+ * * * * * * * * * 
+ 
+ 
+ 
+ Question 4.
+ 
+ 
+ PROGRAM:
+ 
+ 
+ 
+ package edac;
+import java.util.Scanner;
+
+public class Question4 {
+    public static void main(String args[])
+    {
+    Scanner sc = new Scanner(System.in);
+    {
+    System.out.println("Enter any number: ");
+    int N=sc.nextInt();
+    for(int i=1;i<=N;i++)
+    {
+        for(int m=N;m>=i;m--)
+        {
+            System.out.print("  ");
+        }
+        for(int j=1;j<=i;j++)
+        {
+            System.out.print(j+" ");
+        }
+          for(int k=i-1;k>=1;k--)
+          {
+              System.out.print(k+" ");
+          }
+          System.out.println();
+    }
+    
+    
+    }
+    }
+ 
+ 
+ 
+ OUTPUT:
+ 
+ 
+ 
+ 
+                 1 
+                1 2 1 
+              1 2 3 2 1 
+            1 2 3 4 3 2 1 
+          1 2 3 4 5 4 3 2 1 
+        1 2 3 4 5 6 5 4 3 2 1 
+      1 2 3 4 5 6 7 6 5 4 3 2 1 
+    1 2 3 4 5 6 7 8 7 6 5 4 3 2 1 
+  1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ Question 5.
+ 
+ 
+ PROGRAM:
+ 
+ package edac;
+
+
+public class Question5 {
+    public static void main(String arg[])
+    {
+        for(int i=1;i<=9;i++)
+        {
+            int c;
+            for(int j=1;j<=9;j++)
+            {
+                if(j>=10-i)
+                    System.out.print(j+" ");
+                else
+                    System.out.print("  ");
+            }
+            for(int k=1;k<=8;k++)
+            {
+                if(k<i && i !=1)
+                {
+                    c=9-k;
+                    System.out.print(" "+c);
+                    c=0;
+                }
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }    
+    }
+    
+}
+
+
+OUTPUT:
+
+                9         
+              8 9  8       
+            7 8 9  8 7      
+          6 7 8 9  8 7 6     
+        5 6 7 8 9  8 7 6 5    
+      4 5 6 7 8 9  8 7 6 5 4   
+    3 4 5 6 7 8 9  8 7 6 5 4 3  
+  2 3 4 5 6 7 8 9  8 7 6 5 4 3 2 
+1 2 3 4 5 6 7 8 9  8 7 6 5 4 3 2 1
+
+
+
+
+
+
+Question 6.
+
+PROGRAM:
+
+package edac;
+
+
+public class Question6 {
+       public static void main(String args[])
+    {
+        for(int i=9;i>=1;i--)
+        {
+            for(int k=9;k>=i;k--)
+            {
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+   
+
+   
+   OUTPUT:
+   
+  * * * * * * * * *
+   * * * * * * * *
+    * * * * * * *
+     * * * * * *
+      * * * * *
+       * * * *
+        * * *
+         * *
+          *
+		  
+		  
+		  
+		  
+	
+		  
+		  
+Question 7.
+
+
+PROGRAM:
+
+
+package edac;
+
+
+public class Question7 {
+    public static void main(String args[])
+    {
+        for(int i=9;i>=1;i--)
+        {
+            for(int k=9;k>=i;k--)
+            {
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(" "+i);
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+
+OUTPUT:
+
+ 9 9 9 9 9 9 9 9 9
+   8 8 8 8 8 8 8 8
+    7 7 7 7 7 7 7
+     6 6 6 6 6 6
+      5 5 5 5 5
+       4 4 4 4
+        3 3 3
+         2 2
+          1
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+Question 8.
+
+
+PROGRAM:
+
+
+package edac;
+
+public class Question8 {
+    public static void main(String args[])
+    {
+        for(int i=1;i<=6;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+
+
+OUTPUT:
+
+
+
+ *
+ * *
+ * * *
+ * * * *
+ * * * * *
+ * * * * * *
+ 
+ 
+ 
+ 
+ 
+ 
+ Question 9.
+ 
+ 
+ PROGRAM:
+ 
+ package edac;
+
+public class Question9 {
+     public static void main(String args[])
+    {
+        for(int i=1;i<=6;i++)
+        {
+            for(int j=6;j>=i;j--)
+            {
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+		
+		
+OUTPUT:
+
+ * * * * * *
+ * * * * *
+ * * * *
+ * * *
+ * *
+ *
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Question 10.
+ 
+ 
+ 
+ PROGRAM:
+ 
+ package edac;
+
+public class Question10 {
+    public  static void main(String args[])
+    {
+        for(int i=1;i<=6;i++)
+        {
+            if(i<2 || i>4)
+            {
+                for(int j=6;j>=i;j--)
+                    System.out.print("*");
+            }
+        else
+            {
+                System.out.print("*");
+                for(int k=4;k>=i;k--)
+                {
+                    System.out.print(" ");
+                }
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+
+OUTPUT:
+
+******
+*     *
+*    *
+*  *
+* *
+*
+
+
+
+
+
+
+
+Question 11.
+
+
+PROGRAM:
+
+package edac;
+
+
+public class Question11 {
+    public  static void main(String args[])
+    {
+        for(int i=1;i<=6;i++)
+        {
+            for(int j=6;j>=i;j--)
+            {
+                System.out.print(" ");
+            }
+            for(int k=1;k<=i;k++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+
+OUTPUT:
+
+      * 
+     * * 
+    * * * 
+   * * * * 
+  * * * * * 
+ * * * * * * 
+ 
+ 
+ 
+ 
+ 
+ 
+ Question 12.
+ 
+ 
+ 
+ 
+ PROGRAM:
+ 
+ package edac;
+
+public class Question12 {
+       public  static void main(String args[])
+    {
+        for(int i=1;i<=6;i++)
+        {
+            for(int k=1;k<=i;k++)
+            {
+                System.out.print(" ");
+            }
+            for(int j=6;j>=i;j--)
+            {
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+    }   
+    
+}
+
+
+
+OUTPUT:
+
+
+  * * * * * *
+   * * * * *
+    * * * *
+     * * *
+      * *
+       *
+	   
+	   
+	   
+
+	   
+	   
+ Question 13.
+	   
+	   
+	   
+ PROGRAM:
+ 
+ 
+ package edac;
+
+
+public class Question13 {
+       public  static void main(String args[])
+    {
+        for(int i=1;i<=6;i++)
+        {
+            for(int j=6;j>=i;j--)
+            {
+                System.out.print(" ");
+            }
+            if(i<3 || i>5)
+            {
+                for(int k=1;k<=i;k++)
+                {
+                    System.out.print("* ");
+                }
+            }
+            else
+            {
+                System.out.print("* ");
+                for(int l=3;l<=i;l++)
+                {
+                    System.out.print("  ");
+                }
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+       
+    
+}
+
+	   
+	
+
+OUTPUT:
+
+
+       *
+     *   * 
+    *     * 
+   *       * 
+  *         * 
+ * * * * * * *	
+	   
